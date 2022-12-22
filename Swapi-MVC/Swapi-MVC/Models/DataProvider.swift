@@ -13,21 +13,31 @@ struct DataProvider {
 
     // MARK: - Private -
 
-    private static func getData(url: URL, completion: @escaping (Array<Any>) -> Void) {
+    private static func getData(url: URL, completion: @escaping (Data?) -> Void) {
         let task = URLSession.shared.dataTask(with: url) { (data: Data?, _: URLResponse?, _: Error?) -> Void in
             guard let data = data else {
+                completion(nil)
+
                 return
             }
 
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    guard let results = json["results"] as? [Any] else {
-                        completion([])
+                    guard let results = json["results"] as? [[String: Any]] else {
+                        completion(nil)
 
                         return
                     }
 
-                    completion(results)
+                    do {
+                        let serialisedResults = try JSONSerialization.data(withJSONObject: results)
+
+                        completion(serialisedResults)
+                    } catch {
+                        completion(nil)
+
+                        print(error)
+                    }
                 }
             } catch let error {
                 print(error.localizedDescription)
@@ -39,11 +49,26 @@ struct DataProvider {
 
     // MARK: - Public API Calls -
 
-    static func getPeople(completion: @escaping (Array<Any>) -> Void) {
+    static func getPeople(completion: @escaping (Array<Person>) -> Void) {
         let url = URL(string: BASE_URL + "people")!
 
-        getData(url: url, completion: completion)
+        getData(url: url) { data in
+            guard let data = data else {
+                completion([])
 
+                return
+            }
+
+            do {
+                let decoder = JSONDecoder()
+
+                let people = try decoder.decode([Person].self, from: data)
+
+                completion(people)
+            } catch {
+                print(error)
+            }
+        }
     }
 
 }
