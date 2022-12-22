@@ -15,6 +15,7 @@
 		E1564DDD2954641800BD004A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DDB2954641800BD004A /* ListViewController.swift */; };
 		E1564DDE2954641800BD004A /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1564DDC2954641800BD004A /* ListViewController.xib */; };
 		E1D025A5295472C900239401 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D025A4295472C900239401 /* .swiftlint.yml */; };
+		E1D025A72954782C00239401 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025A62954782C00239401 /* DataProvider.swift */; };
 		F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		E1564DDB2954641800BD004A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E1564DDC2954641800BD004A /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		E1D025A4295472C900239401 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E1D025A62954782C00239401 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		E1564DD62954603800BD004A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E1D025A62954782C00239401 /* DataProvider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */,
 				E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */,
+				E1D025A72954782C00239401 /* DataProvider.swift in Sources */,
 				E1564DDD2954641800BD004A /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

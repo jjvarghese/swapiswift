@@ -11,6 +11,10 @@ class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        DataProvider.getPeople { people in
+            print(people)
+        }
     }
 
 }
