@@ -14,9 +14,13 @@
 		E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1564DAC29545D3500BD004A /* LaunchScreen.storyboard */; };
 		E1564DDD2954641800BD004A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DDB2954641800BD004A /* ListViewController.swift */; };
 		E1564DDE2954641800BD004A /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1564DDC2954641800BD004A /* ListViewController.xib */; };
+		F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0832E82AEDCC923DB45A40D4 /* Pods-Swapi-MVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swapi-MVC.debug.xcconfig"; path = "Target Support Files/Pods-Swapi-MVC/Pods-Swapi-MVC.debug.xcconfig"; sourceTree = "<group>"; };
+		3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swapi_MVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEFFC73D01B26773AB6F102 /* Pods-Swapi-MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swapi-MVC.release.xcconfig"; path = "Target Support Files/Pods-Swapi-MVC/Pods-Swapi-MVC.release.xcconfig"; sourceTree = "<group>"; };
 		E1564D9E29545D2E00BD004A /* Swapi-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swapi-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1564DA129545D2E00BD004A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1564DA329545D2E00BD004A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81A3FFBE889D20220D34624F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0832E82AEDCC923DB45A40D4 /* Pods-Swapi-MVC.debug.xcconfig */,
+				DFEFFC73D01B26773AB6F102 /* Pods-Swapi-MVC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEA85B2BE7077E7E37F22563 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1564D9529545D2E00BD004A = {
 			isa = PBXGroup;
 			children = (
 				E1564DA029545D2E00BD004A /* Swapi-MVC */,
 				E1564D9F29545D2E00BD004A /* Products */,
+				81A3FFBE889D20220D34624F /* Pods */,
+				BEA85B2BE7077E7E37F22563 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1564DB229545D3500BD004A /* Build configuration list for PBXNativeTarget "Swapi-MVC" */;
 			buildPhases = (
+				110EBD0DB733DAF1437F95FA /* [CP] Check Pods Manifest.lock */,
 				E1564D9A29545D2E00BD004A /* Sources */,
 				E1564D9B29545D2E00BD004A /* Frameworks */,
 				E1564D9C29545D2E00BD004A /* Resources */,
+				E1564DDF2954668900BD004A /* Lint */,
 			);
 			buildRules = (
 			);
@@ -176,6 +202,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		110EBD0DB733DAF1437F95FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swapi-MVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1564DDF2954668900BD004A /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/nuit; then \n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed, download from https: //github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1564D9A29545D2E00BD004A /* Sources */ = {
@@ -326,6 +395,7 @@
 		};
 		E1564DB329545D3500BD004A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0832E82AEDCC923DB45A40D4 /* Pods-Swapi-MVC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +424,7 @@
 		};
 		E1564DB429545D3500BD004A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFEFFC73D01B26773AB6F102 /* Pods-Swapi-MVC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
