@@ -6,6 +6,4 @@ target 'Swapi-MVC' do
   use_frameworks!
 
   # Pods for Swapi-MVC
-
-  pod 'SwiftLint'
 end
