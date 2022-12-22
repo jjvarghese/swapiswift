@@ -14,6 +14,7 @@
 		E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1564DAC29545D3500BD004A /* LaunchScreen.storyboard */; };
 		E1564DDD2954641800BD004A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DDB2954641800BD004A /* ListViewController.swift */; };
 		E1564DDE2954641800BD004A /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1564DDC2954641800BD004A /* ListViewController.xib */; };
+		E1D025A5295472C900239401 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D025A4295472C900239401 /* .swiftlint.yml */; };
 		F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		E1564DAF29545D3500BD004A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1564DDB2954641800BD004A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E1564DDC2954641800BD004A /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		E1D025A4295472C900239401 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				E1564DAA29545D3500BD004A /* Assets.xcassets */,
 				E1564DAC29545D3500BD004A /* LaunchScreen.storyboard */,
 				E1564DAF29545D3500BD004A /* Info.plist */,
+				E1D025A4295472C900239401 /* .swiftlint.yml */,
 			);
 			path = "Swapi-MVC";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D025A5295472C900239401 /* .swiftlint.yml in Resources */,
 				E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */,
 				E1564DAB29545D3500BD004A /* Assets.xcassets in Resources */,
 				E1564DDE2954641800BD004A /* ListViewController.xib in Resources */,
@@ -228,6 +232,7 @@
 		};
 		E1564DDF2954668900BD004A /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -242,7 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -49,9 +49,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func configureLaunch() {
         let entryVc: ListViewController = ListViewController()
-        let nc: UINavigationController = UINavigationController(rootViewController: entryVc)
+        let entryNc: UINavigationController = UINavigationController(rootViewController: entryVc)
 
-        window?.rootViewController = nc
+        window?.rootViewController = entryNc
         window?.makeKeyAndVisible()
     }
 
