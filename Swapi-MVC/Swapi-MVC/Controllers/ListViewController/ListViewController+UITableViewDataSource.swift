@@ -18,7 +18,9 @@ extension ListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: SwapiTableViewCell.IDENTIFIER) as! SwapiTableViewCell
         let person = people[indexPath.row]
 
-        cell.update(withTitle: person.name)
+        let subtitle = "gender: " + person.gender + " eyes: " + person.eyeColor + " hair: " + person.hairColor
+
+        cell.update(withTitle: person.name, subtitle: subtitle)
 
         return cell
     }
