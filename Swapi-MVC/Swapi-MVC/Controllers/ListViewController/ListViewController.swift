@@ -53,9 +53,10 @@ class ListViewController: UIViewController {
     }
 
     private func configureTableViews() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UINib.init(nibName: "SwapiTableViewCell", bundle: nil), forCellReuseIdentifier: SwapiTableViewCell.IDENTIFIER)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorStyle = .none
     }
 
 }

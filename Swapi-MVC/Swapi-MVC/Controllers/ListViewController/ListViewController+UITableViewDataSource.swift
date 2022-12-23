@@ -15,10 +15,10 @@ extension ListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: SwapiTableViewCell.IDENTIFIER) as! SwapiTableViewCell
         let person = people[indexPath.row]
 
-        cell.textLabel?.text = person.name
+        cell.update(withTitle: person.name)
 
         return cell
     }
