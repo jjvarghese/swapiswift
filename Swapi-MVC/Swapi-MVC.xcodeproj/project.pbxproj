@@ -17,6 +17,8 @@
 		E1D025A5295472C900239401 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D025A4295472C900239401 /* .swiftlint.yml */; };
 		E1D025A72954782C00239401 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025A62954782C00239401 /* DataProvider.swift */; };
 		E1D025AB2954AA8F00239401 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AA2954AA8F00239401 /* Person.swift */; };
+		E1D025AD2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AC2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift */; };
+		E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */; };
 		F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		E1D025A4295472C900239401 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E1D025A62954782C00239401 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E1D025AA2954AA8F00239401 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E1D025AC2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			children = (
 				E1564DDB2954641800BD004A /* ListViewController.swift */,
 				E1564DDC2954641800BD004A /* ListViewController.xib */,
+				E1D025AC2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift */,
+				E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */,
 				E1D025A72954782C00239401 /* DataProvider.swift in Sources */,
 				E1564DDD2954641800BD004A /* ListViewController.swift in Sources */,
+				E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */,
+				E1D025AD2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
