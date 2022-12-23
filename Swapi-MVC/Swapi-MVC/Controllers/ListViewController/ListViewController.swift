@@ -9,6 +9,7 @@ import UIKit
 
 class ListViewController: UIViewController {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
 
     var people: [Person] = []
@@ -37,6 +38,7 @@ class ListViewController: UIViewController {
     private func updateUI() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
+            self?.activityIndicator.stopAnimating()
         }
     }
 
