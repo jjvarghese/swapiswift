@@ -18,6 +18,7 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureNavigation()
         configureSubviews()
 
         loadData()
@@ -40,6 +41,12 @@ class ListViewController: UIViewController {
     }
 
     // MARK: - Configuration -
+
+    private func configureNavigation() {
+        title = "Swapi - Classic MVC"
+
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
 
     private func configureSubviews() {
         configureTableViews()
