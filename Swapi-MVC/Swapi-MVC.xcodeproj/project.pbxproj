@@ -21,6 +21,8 @@
 		E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */; };
 		E1D025B52955C8A800239401 /* SwapiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025B32955C8A800239401 /* SwapiTableViewCell.swift */; };
 		E1D025B62955C8A800239401 /* SwapiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D025B42955C8A800239401 /* SwapiTableViewCell.xib */; };
+		E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025B82955FC3E00239401 /* DetailViewController.swift */; };
+		E1D025BB2955FC3E00239401 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D025B92955FC3E00239401 /* DetailViewController.xib */; };
 		F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		E1D025B32955C8A800239401 /* SwapiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiTableViewCell.swift; sourceTree = "<group>"; };
 		E1D025B42955C8A800239401 /* SwapiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapiTableViewCell.xib; sourceTree = "<group>"; };
+		E1D025B82955FC3E00239401 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E1D025B92955FC3E00239401 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			children = (
 				E1564DDA295461A100BD004A /* ListViewController */,
 				E1564DD92954615700BD004A /* App */,
+				E1D025BC2955FC4400239401 /* DetailViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +174,15 @@
 				E1D025B42955C8A800239401 /* SwapiTableViewCell.xib */,
 			);
 			path = SwapiTableViewCell;
+			sourceTree = "<group>";
+		};
+		E1D025BC2955FC4400239401 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1D025B82955FC3E00239401 /* DetailViewController.swift */,
+				E1D025B92955FC3E00239401 /* DetailViewController.xib */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,7 @@
 			files = (
 				E1D025A5295472C900239401 /* .swiftlint.yml in Resources */,
 				E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */,
+				E1D025BB2955FC3E00239401 /* DetailViewController.xib in Resources */,
 				E1564DAB29545D3500BD004A /* Assets.xcassets in Resources */,
 				E1564DDE2954641800BD004A /* ListViewController.xib in Resources */,
 				E1D025B62955C8A800239401 /* SwapiTableViewCell.xib in Resources */,
@@ -291,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */,
 				E1D025AB2954AA8F00239401 /* Person.swift in Sources */,
 				E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */,
 				E1D025B52955C8A800239401 /* SwapiTableViewCell.swift in Sources */,
