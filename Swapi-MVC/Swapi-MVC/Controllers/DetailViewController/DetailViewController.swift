@@ -33,6 +33,8 @@ class DetailViewController: UIViewController {
 
         self.title = title
 
+        navigationController?.navigationBar.tintColor = .white
+
         self.detailOne = detailOne
         self.detailTwo = detailTwo
         self.detailThree = detailThree

@@ -22,6 +22,7 @@ class SwapiTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
         backgroundColor = UIColor.clear
+        selectionStyle = .none
 
         configureSubviews()
     }

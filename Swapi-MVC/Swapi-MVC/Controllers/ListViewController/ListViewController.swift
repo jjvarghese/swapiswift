@@ -48,6 +48,7 @@ class ListViewController: UIViewController {
         title = "Swapi - Classic MVC"
 
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.tintColor = .white
     }
 
     private func configureSubviews() {
