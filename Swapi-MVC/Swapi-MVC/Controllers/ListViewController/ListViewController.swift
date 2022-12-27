@@ -63,6 +63,7 @@ class ListViewController: UIViewController {
 
     private func configureTableViews() {
         tableView.register(UINib.init(nibName: "SwapiTableViewCell", bundle: nil), forCellReuseIdentifier: SwapiTableViewCell.IDENTIFIER)
+        tableView.register(UINib.init(nibName: "LoadingTableViewCell", bundle: nil), forCellReuseIdentifier: LoadingTableViewCell.IDENTIFIER)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none

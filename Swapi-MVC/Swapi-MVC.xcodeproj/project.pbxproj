@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E118450E295B5258009EF755 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118450C295B5258009EF755 /* LoadingTableViewCell.swift */; };
+		E1184512295B532E009EF755 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1184511295B532E009EF755 /* LoadingTableViewCell.xib */; };
 		E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DA129545D2E00BD004A /* AppDelegate.swift */; };
 		E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DA329545D2E00BD004A /* SceneDelegate.swift */; };
 		E1564DA929545D2E00BD004A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1564DA729545D2E00BD004A /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		0832E82AEDCC923DB45A40D4 /* Pods-Swapi-MVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swapi-MVC.debug.xcconfig"; path = "Target Support Files/Pods-Swapi-MVC/Pods-Swapi-MVC.debug.xcconfig"; sourceTree = "<group>"; };
 		3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swapi_MVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEFFC73D01B26773AB6F102 /* Pods-Swapi-MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swapi-MVC.release.xcconfig"; path = "Target Support Files/Pods-Swapi-MVC/Pods-Swapi-MVC.release.xcconfig"; sourceTree = "<group>"; };
+		E118450C295B5258009EF755 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		E1184511295B532E009EF755 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		E1564D9E29545D2E00BD004A /* Swapi-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swapi-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1564DA129545D2E00BD004A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1564DA329545D2E00BD004A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,15 @@
 				3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1184510295B528E009EF755 /* LoadingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E118450C295B5258009EF755 /* LoadingTableViewCell.swift */,
+				E1184511295B532E009EF755 /* LoadingTableViewCell.xib */,
+			);
+			path = LoadingTableViewCell;
 			sourceTree = "<group>";
 		};
 		E1564D9529545D2E00BD004A = {
@@ -135,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D025B72955C8AC00239401 /* SwapiTableViewCell */,
+				E1184510295B528E009EF755 /* LoadingTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,6 +261,7 @@
 			files = (
 				E1D025A5295472C900239401 /* .swiftlint.yml in Resources */,
 				E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */,
+				E1184512295B532E009EF755 /* LoadingTableViewCell.xib in Resources */,
 				E1D025BB2955FC3E00239401 /* DetailViewController.xib in Resources */,
 				E1564DAB29545D3500BD004A /* Assets.xcassets in Resources */,
 				E1564DDE2954641800BD004A /* ListViewController.xib in Resources */,
@@ -306,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E118450E295B5258009EF755 /* LoadingTableViewCell.swift in Sources */,
 				E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */,
 				E1D025AB2954AA8F00239401 /* Person.swift in Sources */,
 				E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */,
