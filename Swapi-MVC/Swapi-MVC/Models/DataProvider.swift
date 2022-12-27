@@ -13,18 +13,18 @@ struct DataProvider {
 
     // MARK: - Private -
 
-    private static func getData(url: URL, completion: @escaping (Data?) -> Void) {
+    private static func getData(url: URL, completion: @escaping (Data?, String?) -> Void) {
         let task = URLSession.shared.dataTask(with: url) { (data: Data?, _: URLResponse?, _: Error?) -> Void in
             guard let data = data else {
-                completion(nil)
+                completion(nil, nil)
 
                 return
             }
 
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    guard let results = json["results"] as? [[String: Any]] else {
-                        completion(nil)
+                    guard let results = json["results"] as? [[String: Any]], let next = json["next"] as? String else {
+                        completion(nil, nil)
 
                         return
                     }
@@ -32,9 +32,9 @@ struct DataProvider {
                     do {
                         let serialisedResults = try JSONSerialization.data(withJSONObject: results)
 
-                        completion(serialisedResults)
+                        completion(serialisedResults, next)
                     } catch {
-                        completion(nil)
+                        completion(nil, nil)
 
                         print(error)
                     }
@@ -49,12 +49,18 @@ struct DataProvider {
 
     // MARK: - Public API Calls -
 
-    static func getPeople(completion: @escaping (Array<Person>) -> Void) {
-        let url = URL(string: BASE_URL + "people")!
+    static func getPeople(from page: String? = nil, completion: @escaping (Array<Person>, String?) -> Void) {
+        let url: URL
 
-        getData(url: url) { data in
+        if let page = page {
+            url = URL(string: page)!
+        } else {
+            url = URL(string: BASE_URL + "people")!
+        }
+
+        getData(url: url) { data, next in
             guard let data = data else {
-                completion([])
+                completion([], nil)
 
                 return
             }
@@ -64,7 +70,7 @@ struct DataProvider {
 
                 let people = try decoder.decode([Person].self, from: data)
 
-                completion(people)
+                completion(people, next)
             } catch {
                 print(error)
             }

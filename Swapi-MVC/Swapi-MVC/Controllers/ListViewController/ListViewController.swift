@@ -13,6 +13,8 @@ class ListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var people: [Person] = []
+    var nextPage: String?
+    var isLoading = false
 
     // MARK: - UIViewController -
 
@@ -27,9 +29,12 @@ class ListViewController: UIViewController {
 
     // MARK: - Data -
 
-    private func loadData() {
-        DataProvider.getPeople { [weak self] people in
-            self?.people = people
+    func loadData() {
+        isLoading = true
+
+        DataProvider.getPeople(from: nextPage) { [weak self] people, next in
+            self?.people.append(contentsOf: people)
+            self?.nextPage = next
 
             self?.updateUI()
         }
@@ -37,6 +42,7 @@ class ListViewController: UIViewController {
 
     private func updateUI() {
         DispatchQueue.main.async { [weak self] in
+            self?.isLoading = false
             self?.tableView.reloadData()
             self?.activityIndicator.stopAnimating()
         }
