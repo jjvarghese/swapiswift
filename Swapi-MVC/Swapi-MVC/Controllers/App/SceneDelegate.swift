@@ -13,8 +13,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
-
-        configureLaunch()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -43,16 +41,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-    }
-
-    // MARK: - Configuration -
-
-    private func configureLaunch() {
-        let entryVc: ListViewController = ListViewController()
-        let entryNc: UINavigationController = UINavigationController(rootViewController: entryVc)
-
-        window?.rootViewController = entryNc
-        window?.makeKeyAndVisible()
     }
 
 }

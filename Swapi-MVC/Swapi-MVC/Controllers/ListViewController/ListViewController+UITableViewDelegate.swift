@@ -11,7 +11,7 @@ import UIKit
 extension ListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let person = people[indexPath.row]
+        guard let person = listModel?.people[indexPath.row] else { return }
 
         let title = person.name
         let detailOne = "Gender: " + person.gender
