@@ -118,6 +118,50 @@
 			path = LoadingTableViewCell;
 			sourceTree = "<group>";
 		};
+		E137C882295DD922006F56A3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E137C87A295CA254006F56A3 /* ListViewProtocol.swift */,
+				E137C87C295CA433006F56A3 /* ListView.swift */,
+				E137C880295CAACA006F56A3 /* ListView.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		E137C883295DDA9B006F56A3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E137C876295C9F98006F56A3 /* ListModelProtocol.swift */,
+				E137C878295CA008006F56A3 /* ListModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		E137C884295DDAC3006F56A3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E137C886295DDB6A006F56A3 /* Objects */,
+				E137C885295DDB5B006F56A3 /* Providers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E137C885295DDB5B006F56A3 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				E1D025A62954782C00239401 /* DataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		E137C886295DDB6A006F56A3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E1D025AA2954AA8F00239401 /* Person.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		E1564D9529545D2E00BD004A = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +184,7 @@
 		E1564DA029545D2E00BD004A /* Swapi-MVC */ = {
 			isa = PBXGroup;
 			children = (
+				E137C884295DDAC3006F56A3 /* API */,
 				E1564DD72954604200BD004A /* Views */,
 				E1564DD62954603800BD004A /* Models */,
 				E1564DD52954600800BD004A /* Controllers */,
@@ -155,7 +200,7 @@
 		E1564DD52954600800BD004A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E1564DDA295461A100BD004A /* ListViewController */,
+				E1564DDA295461A100BD004A /* List */,
 				E1564DD92954615700BD004A /* App */,
 				E1D025BC2955FC4400239401 /* DetailViewController */,
 			);
@@ -165,10 +210,7 @@
 		E1564DD62954603800BD004A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E1D025A92954AA7200239401 /* Objects */,
-				E1D025A62954782C00239401 /* DataProvider.swift */,
-				E137C876295C9F98006F56A3 /* ListModelProtocol.swift */,
-				E137C878295CA008006F56A3 /* ListModel.swift */,
+				E137C883295DDA9B006F56A3 /* List */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,9 +220,7 @@
 			children = (
 				E1D025B72955C8AC00239401 /* SwapiTableViewCell */,
 				E1184510295B528E009EF755 /* LoadingTableViewCell */,
-				E137C87A295CA254006F56A3 /* ListViewProtocol.swift */,
-				E137C87C295CA433006F56A3 /* ListView.swift */,
-				E137C880295CAACA006F56A3 /* ListView.xib */,
+				E137C882295DD922006F56A3 /* List */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,22 +234,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		E1564DDA295461A100BD004A /* ListViewController */ = {
+		E1564DDA295461A100BD004A /* List */ = {
 			isa = PBXGroup;
 			children = (
 				E1564DDB2954641800BD004A /* ListViewController.swift */,
 				E1D025AC2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift */,
 				E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */,
 			);
-			path = ListViewController;
-			sourceTree = "<group>";
-		};
-		E1D025A92954AA7200239401 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				E1D025AA2954AA8F00239401 /* Person.swift */,
-			);
-			path = Objects;
+			path = List;
 			sourceTree = "<group>";
 		};
 		E1D025B72955C8AC00239401 /* SwapiTableViewCell */ = {
