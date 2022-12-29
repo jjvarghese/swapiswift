@@ -35,9 +35,15 @@ class ListViewController: UIViewController {
         configureNavigation()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailController = segue.destination as? DetailViewController, let detailModel = sender as? DetailModelProtocol {
+            detailController.setDetailModel(detailModel)
+        }
+    }
+
     // MARK: - Configuration -
 
-    fileprivate func configureView() {
+    private func configureView() {
         if let mainView = view as? ListViewProtocol {
             if listView == nil {
                 setListView(mainView)
@@ -45,13 +51,13 @@ class ListViewController: UIViewController {
         }
     }
 
-    fileprivate func configureModel() {
+    private func configureModel() {
         if listModel == nil {
             setListModel(ListModel())
         }
     }
 
-    fileprivate func configureNavigation() {
+    private func configureNavigation() {
         title = "Swapi - Classic MVC"
 
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]

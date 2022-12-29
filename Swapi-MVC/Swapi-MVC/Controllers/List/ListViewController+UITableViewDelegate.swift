@@ -19,13 +19,13 @@ extension ListViewController: UITableViewDelegate {
         let detailThree = "Eye colour: " + person.eyeColor
         let detailFour = "Skin colour: " + person.skinColor
 
-        let detailVC = DetailViewController(withTitle: title,
-                                            detailOne: detailOne,
-                                            detailTwo: detailTwo,
-                                            detailThree: detailThree,
-                                            detailFour: detailFour)
+        let detailModel = DetailModel(withTitle: title,
+                                      detailOne: detailOne,
+                                      detailTwo: detailTwo,
+                                      detailThree: detailThree,
+                                      detailFour: detailFour)
 
-        navigationController?.pushViewController(detailVC, animated: true)
+        performSegue(withIdentifier: "ShowDetail", sender: detailModel)
     }
 
 }

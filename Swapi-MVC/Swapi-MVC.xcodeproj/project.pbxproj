@@ -15,6 +15,11 @@
 		E137C87B295CA254006F56A3 /* ListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C87A295CA254006F56A3 /* ListViewProtocol.swift */; };
 		E137C87D295CA433006F56A3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C87C295CA433006F56A3 /* ListView.swift */; };
 		E137C881295CAACA006F56A3 /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E137C880295CAACA006F56A3 /* ListView.xib */; };
+		E137C889295DDBD2006F56A3 /* DetailModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C888295DDBD2006F56A3 /* DetailModelProtocol.swift */; };
+		E137C88B295DDBF1006F56A3 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C88A295DDBF1006F56A3 /* DetailModel.swift */; };
+		E137C88E295DE0AD006F56A3 /* DetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C88D295DE0AD006F56A3 /* DetailViewProtocol.swift */; };
+		E137C890295DE110006F56A3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C88F295DE110006F56A3 /* DetailView.swift */; };
+		E137C892295DE148006F56A3 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E137C891295DE148006F56A3 /* DetailView.xib */; };
 		E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DA129545D2E00BD004A /* AppDelegate.swift */; };
 		E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DA329545D2E00BD004A /* SceneDelegate.swift */; };
 		E1564DA929545D2E00BD004A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1564DA729545D2E00BD004A /* Main.storyboard */; };
@@ -28,7 +33,6 @@
 		E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */; };
 		E1D025B52955C8A800239401 /* SwapiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025B32955C8A800239401 /* SwapiTableViewCell.swift */; };
 		E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025B82955FC3E00239401 /* DetailViewController.swift */; };
-		E1D025BB2955FC3E00239401 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D025B92955FC3E00239401 /* DetailViewController.xib */; };
 		F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,11 @@
 		E137C87A295CA254006F56A3 /* ListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewProtocol.swift; sourceTree = "<group>"; };
 		E137C87C295CA433006F56A3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		E137C880295CAACA006F56A3 /* ListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListView.xib; sourceTree = "<group>"; };
+		E137C888295DDBD2006F56A3 /* DetailModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelProtocol.swift; sourceTree = "<group>"; };
+		E137C88A295DDBF1006F56A3 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		E137C88D295DE0AD006F56A3 /* DetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocol.swift; sourceTree = "<group>"; };
+		E137C88F295DE110006F56A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E137C891295DE148006F56A3 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		E1564D9E29545D2E00BD004A /* Swapi-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swapi-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1564DA129545D2E00BD004A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1564DA329545D2E00BD004A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +79,6 @@
 		E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		E1D025B32955C8A800239401 /* SwapiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiTableViewCell.swift; sourceTree = "<group>"; };
 		E1D025B82955FC3E00239401 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		E1D025B92955FC3E00239401 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,25 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		E137C887295DDBC1006F56A3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E137C888295DDBD2006F56A3 /* DetailModelProtocol.swift */,
+				E137C88A295DDBF1006F56A3 /* DetailModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E137C88C295DE0A3006F56A3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E137C88D295DE0AD006F56A3 /* DetailViewProtocol.swift */,
+				E137C88F295DE110006F56A3 /* DetailView.swift */,
+				E137C891295DE148006F56A3 /* DetailView.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		E1564D9529545D2E00BD004A = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +229,7 @@
 			children = (
 				E1564DDA295461A100BD004A /* List */,
 				E1564DD92954615700BD004A /* App */,
-				E1D025BC2955FC4400239401 /* DetailViewController */,
+				E1D025BC2955FC4400239401 /* Detail */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +237,7 @@
 		E1564DD62954603800BD004A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E137C887295DDBC1006F56A3 /* Detail */,
 				E137C883295DDA9B006F56A3 /* List */,
 			);
 			path = Models;
@@ -218,6 +246,7 @@
 		E1564DD72954604200BD004A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E137C88C295DE0A3006F56A3 /* Detail */,
 				E1D025B72955C8AC00239401 /* SwapiTableViewCell */,
 				E1184510295B528E009EF755 /* LoadingTableViewCell */,
 				E137C882295DD922006F56A3 /* List */,
@@ -253,13 +282,12 @@
 			path = SwapiTableViewCell;
 			sourceTree = "<group>";
 		};
-		E1D025BC2955FC4400239401 /* DetailViewController */ = {
+		E1D025BC2955FC4400239401 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				E1D025B82955FC3E00239401 /* DetailViewController.swift */,
-				E1D025B92955FC3E00239401 /* DetailViewController.xib */,
 			);
-			path = DetailViewController;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,10 +380,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E137C892295DE148006F56A3 /* DetailView.xib in Resources */,
 				E1D025A5295472C900239401 /* .swiftlint.yml in Resources */,
 				E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */,
 				E1184512295B532E009EF755 /* LoadingTableViewCell.xib in Resources */,
-				E1D025BB2955FC3E00239401 /* DetailViewController.xib in Resources */,
 				E137C881295CAACA006F56A3 /* ListView.xib in Resources */,
 				E1564DAB29545D3500BD004A /* Assets.xcassets in Resources */,
 				E137C868295C36FE006F56A3 /* SwapiTableViewCell.xib in Resources */,
@@ -421,13 +449,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E137C88B295DDBF1006F56A3 /* DetailModel.swift in Sources */,
+				E137C890295DE110006F56A3 /* DetailView.swift in Sources */,
 				E137C87B295CA254006F56A3 /* ListViewProtocol.swift in Sources */,
+				E137C889295DDBD2006F56A3 /* DetailModelProtocol.swift in Sources */,
 				E137C877295C9F98006F56A3 /* ListModelProtocol.swift in Sources */,
 				E118450E295B5258009EF755 /* LoadingTableViewCell.swift in Sources */,
 				E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */,
 				E137C879295CA008006F56A3 /* ListModel.swift in Sources */,
 				E1D025AB2954AA8F00239401 /* Person.swift in Sources */,
 				E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */,
+				E137C88E295DE0AD006F56A3 /* DetailViewProtocol.swift in Sources */,
 				E1D025B52955C8A800239401 /* SwapiTableViewCell.swift in Sources */,
 				E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */,
 				E1D025A72954782C00239401 /* DataProvider.swift in Sources */,
