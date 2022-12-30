@@ -58,7 +58,7 @@ class ListViewController: UIViewController {
     }
 
     private func configureNavigation() {
-        title = "Swapi - Classic MVC"
+        title = "Swapi - Modern MVC"
 
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.tintColor = .white

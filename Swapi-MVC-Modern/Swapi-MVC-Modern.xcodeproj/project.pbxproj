@@ -49,7 +49,7 @@
 		E118450C295B5258009EF755 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		E1184511295B532E009EF755 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		E137C867295C36FD006F56A3 /* SwapiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwapiTableViewCell.xib; sourceTree = "<group>"; };
-		E137C86D295C37D0006F56A3 /* Swapi-MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swapi-MVCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E137C86D295C37D0006F56A3 /* Swapi-MVC-ModernTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swapi-MVC-ModernTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137C876295C9F98006F56A3 /* ListModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModelProtocol.swift; sourceTree = "<group>"; };
 		E137C878295CA008006F56A3 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		E137C87A295CA254006F56A3 /* ListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewProtocol.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		E137C88D295DE0AD006F56A3 /* DetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocol.swift; sourceTree = "<group>"; };
 		E137C88F295DE110006F56A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E137C891295DE148006F56A3 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
-		E1564D9E29545D2E00BD004A /* Swapi-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swapi-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1564D9E29545D2E00BD004A /* Swapi-MVC-Modern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swapi-MVC-Modern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1564DA129545D2E00BD004A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1564DA329545D2E00BD004A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E1564DA829545D2E00BD004A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,13 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81A3FFBE889D20220D34624F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E1184510295B528E009EF755 /* LoadingTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,22 +170,21 @@
 		E1564D9529545D2E00BD004A = {
 			isa = PBXGroup;
 			children = (
-				E1564DA029545D2E00BD004A /* Swapi-MVC */,
+				E1564DA029545D2E00BD004A /* Swapi-MVC-Modern */,
 				E1564D9F29545D2E00BD004A /* Products */,
-				81A3FFBE889D20220D34624F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		E1564D9F29545D2E00BD004A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1564D9E29545D2E00BD004A /* Swapi-MVC.app */,
-				E137C86D295C37D0006F56A3 /* Swapi-MVCTests.xctest */,
+				E1564D9E29545D2E00BD004A /* Swapi-MVC-Modern.app */,
+				E137C86D295C37D0006F56A3 /* Swapi-MVC-ModernTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1564DA029545D2E00BD004A /* Swapi-MVC */ = {
+		E1564DA029545D2E00BD004A /* Swapi-MVC-Modern */ = {
 			isa = PBXGroup;
 			children = (
 				E137C884295DDAC3006F56A3 /* API */,
@@ -205,7 +197,7 @@
 				E1564DAF29545D3500BD004A /* Info.plist */,
 				E1D025A4295472C900239401 /* .swiftlint.yml */,
 			);
-			path = "Swapi-MVC";
+			path = "Swapi-MVC-Modern";
 			sourceTree = "<group>";
 		};
 		E1564DD52954600800BD004A /* Controllers */ = {
@@ -277,9 +269,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E137C86C295C37D0006F56A3 /* Swapi-MVCTests */ = {
+		E137C86C295C37D0006F56A3 /* Swapi-MVC-ModernTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E137C873295C37D0006F56A3 /* Build configuration list for PBXNativeTarget "Swapi-MVCTests" */;
+			buildConfigurationList = E137C873295C37D0006F56A3 /* Build configuration list for PBXNativeTarget "Swapi-MVC-ModernTests" */;
 			buildPhases = (
 				E137C869295C37D0006F56A3 /* Sources */,
 				E137C86A295C37D0006F56A3 /* Frameworks */,
@@ -290,14 +282,14 @@
 			dependencies = (
 				E137C872295C37D0006F56A3 /* PBXTargetDependency */,
 			);
-			name = "Swapi-MVCTests";
+			name = "Swapi-MVC-ModernTests";
 			productName = "Swapi-MVCTests";
-			productReference = E137C86D295C37D0006F56A3 /* Swapi-MVCTests.xctest */;
+			productReference = E137C86D295C37D0006F56A3 /* Swapi-MVC-ModernTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E1564D9D29545D2E00BD004A /* Swapi-MVC */ = {
+		E1564D9D29545D2E00BD004A /* Swapi-MVC-Modern */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1564DB229545D3500BD004A /* Build configuration list for PBXNativeTarget "Swapi-MVC" */;
+			buildConfigurationList = E1564DB229545D3500BD004A /* Build configuration list for PBXNativeTarget "Swapi-MVC-Modern" */;
 			buildPhases = (
 				E1564D9A29545D2E00BD004A /* Sources */,
 				E1564D9B29545D2E00BD004A /* Frameworks */,
@@ -308,9 +300,9 @@
 			);
 			dependencies = (
 			);
-			name = "Swapi-MVC";
+			name = "Swapi-MVC-Modern";
 			productName = "Swapi-MVC";
-			productReference = E1564D9E29545D2E00BD004A /* Swapi-MVC.app */;
+			productReference = E1564D9E29545D2E00BD004A /* Swapi-MVC-Modern.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +324,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1564D9929545D2E00BD004A /* Build configuration list for PBXProject "Swapi-MVC" */;
+			buildConfigurationList = E1564D9929545D2E00BD004A /* Build configuration list for PBXProject "Swapi-MVC-Modern" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -345,8 +337,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1564D9D29545D2E00BD004A /* Swapi-MVC */,
-				E137C86C295C37D0006F56A3 /* Swapi-MVCTests */,
+				E1564D9D29545D2E00BD004A /* Swapi-MVC-Modern */,
+				E137C86C295C37D0006F56A3 /* Swapi-MVC-ModernTests */,
 			);
 		};
 /* End PBXProject section */
@@ -436,7 +428,7 @@
 /* Begin PBXTargetDependency section */
 		E137C872295C37D0006F56A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1564D9D29545D2E00BD004A /* Swapi-MVC */;
+			target = E1564D9D29545D2E00BD004A /* Swapi-MVC-Modern */;
 			targetProxy = E137C871295C37D0006F56A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,7 +467,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC-Modern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC-Modern";
 			};
 			name = Debug;
 		};
@@ -493,7 +485,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC-Modern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC-Modern";
 			};
 			name = Release;
 		};
@@ -620,7 +612,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTTH75B5CS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swapi-MVC/Info.plist";
+				INFOPLIST_FILE = "Swapi-MVC-Modern/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -649,7 +641,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTTH75B5CS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swapi-MVC/Info.plist";
+				INFOPLIST_FILE = "Swapi-MVC-Modern/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -672,7 +664,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E137C873295C37D0006F56A3 /* Build configuration list for PBXNativeTarget "Swapi-MVCTests" */ = {
+		E137C873295C37D0006F56A3 /* Build configuration list for PBXNativeTarget "Swapi-MVC-ModernTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E137C874295C37D0006F56A3 /* Debug */,
@@ -681,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1564D9929545D2E00BD004A /* Build configuration list for PBXProject "Swapi-MVC" */ = {
+		E1564D9929545D2E00BD004A /* Build configuration list for PBXProject "Swapi-MVC-Modern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1564DB029545D3500BD004A /* Debug */,
@@ -690,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1564DB229545D3500BD004A /* Build configuration list for PBXNativeTarget "Swapi-MVC" */ = {
+		E1564DB229545D3500BD004A /* Build configuration list for PBXNativeTarget "Swapi-MVC-Modern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1564DB329545D3500BD004A /* Debug */,
