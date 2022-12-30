@@ -33,7 +33,6 @@
 		E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */; };
 		E1D025B52955C8A800239401 /* SwapiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025B32955C8A800239401 /* SwapiTableViewCell.swift */; };
 		E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025B82955FC3E00239401 /* DetailViewController.swift */; };
-		F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0832E82AEDCC923DB45A40D4 /* Pods-Swapi-MVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swapi-MVC.debug.xcconfig"; path = "Target Support Files/Pods-Swapi-MVC/Pods-Swapi-MVC.debug.xcconfig"; sourceTree = "<group>"; };
-		3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swapi_MVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFEFFC73D01B26773AB6F102 /* Pods-Swapi-MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swapi-MVC.release.xcconfig"; path = "Target Support Files/Pods-Swapi-MVC/Pods-Swapi-MVC.release.xcconfig"; sourceTree = "<group>"; };
 		E118450C295B5258009EF755 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		E1184511295B532E009EF755 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		E137C867295C36FD006F56A3 /* SwapiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwapiTableViewCell.xib; sourceTree = "<group>"; };
@@ -93,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92FB0B4A42DD2708E0B5A51 /* Pods_Swapi_MVC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,18 +98,8 @@
 		81A3FFBE889D20220D34624F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0832E82AEDCC923DB45A40D4 /* Pods-Swapi-MVC.debug.xcconfig */,
-				DFEFFC73D01B26773AB6F102 /* Pods-Swapi-MVC.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		BEA85B2BE7077E7E37F22563 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E2E127ABF5F04FB513023BE /* Pods_Swapi_MVC.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E1184510295B528E009EF755 /* LoadingTableViewCell */ = {
@@ -195,7 +180,6 @@
 				E1564DA029545D2E00BD004A /* Swapi-MVC */,
 				E1564D9F29545D2E00BD004A /* Products */,
 				81A3FFBE889D20220D34624F /* Pods */,
-				BEA85B2BE7077E7E37F22563 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,7 +299,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1564DB229545D3500BD004A /* Build configuration list for PBXNativeTarget "Swapi-MVC" */;
 			buildPhases = (
-				110EBD0DB733DAF1437F95FA /* [CP] Check Pods Manifest.lock */,
 				E1564D9A29545D2E00BD004A /* Sources */,
 				E1564D9B29545D2E00BD004A /* Frameworks */,
 				E1564D9C29545D2E00BD004A /* Resources */,
@@ -394,28 +377,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		110EBD0DB733DAF1437F95FA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swapi-MVC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E1564DDF2954668900BD004A /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -652,7 +613,6 @@
 		};
 		E1564DB329545D3500BD004A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0832E82AEDCC923DB45A40D4 /* Pods-Swapi-MVC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -682,7 +642,6 @@
 		};
 		E1564DB429545D3500BD004A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFEFFC73D01B26773AB6F102 /* Pods-Swapi-MVC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
