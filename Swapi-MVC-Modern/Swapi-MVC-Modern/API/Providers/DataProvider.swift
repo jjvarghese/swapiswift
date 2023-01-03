@@ -11,13 +11,19 @@ private let BASE_URL = "https://swapi.dev/api/"
 
 struct DataProvider {
 
+    let session: URLSessionProtocol
+
+    init(withSession session: URLSessionProtocol = URLSession.shared) {
+        self.session = session
+    }
+
     // MARK: - Private -
 
-    private func getData(url: URL, session: URLSessionProtocol, completion: @escaping (Data?, String?) -> Void) {
+    private func getData(url: URL, completion: @escaping (Data?, String?) -> Void) {
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) { (data: Data?, _: URLResponse?, _: Error?) -> Void in
             guard let data = data else {
-                completion(nil, nil)
+                completion(nil, request.url?.absoluteString)
 
                 return
             }
@@ -56,15 +62,13 @@ struct DataProvider {
 
     private var _url: URL = URL(string: BASE_URL + "people")!
 
-    mutating func getPeople(from page: String? = nil, session: URLSessionProtocol = URLSession.shared, completion: @escaping (Array<Person>, String?) -> Void) {
+    mutating func getPeople(from page: String? = nil, completion: @escaping (Array<Person>, String?) -> Void) {
         if let page = page {
             _url = URL(string: page)!
         }
 
-        getData(url: url, session: session) { data, next in
+        getData(url: url) { data, next in
             guard let data = data else {
-                completion([], nil)
-
                 return
             }
 

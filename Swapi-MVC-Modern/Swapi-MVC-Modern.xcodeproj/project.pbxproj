@@ -26,12 +26,15 @@
 		E1564DAB29545D3500BD004A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1564DAA29545D3500BD004A /* Assets.xcassets */; };
 		E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1564DAC29545D3500BD004A /* LaunchScreen.storyboard */; };
 		E1564DDD2954641800BD004A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DDB2954641800BD004A /* ListViewController.swift */; };
+		E16043B329647E290013D8C5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AA2954AA8F00239401 /* Person.swift */; };
 		E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C72964379F0099383C /* MockedURLSession.swift */; };
 		E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */; };
 		E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
 		E1C2E3CD296466A40099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
 		E1C2E3CF296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */; };
 		E1C2E3D0296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */; };
+		E1C2E3D229647AFC0099383C /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3D129647AFC0099383C /* DataProviderTests.swift */; };
+		E1C2E3D329647C100099383C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025A62954782C00239401 /* DataProvider.swift */; };
 		E1D025A5295472C900239401 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D025A4295472C900239401 /* .swiftlint.yml */; };
 		E1D025A72954782C00239401 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025A62954782C00239401 /* DataProvider.swift */; };
 		E1D025AB2954AA8F00239401 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AA2954AA8F00239401 /* Person.swift */; };
@@ -78,6 +81,7 @@
 		E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSessionDataTask.swift; sourceTree = "<group>"; };
 		E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		E1C2E3D129647AFC0099383C /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		E1D025A4295472C900239401 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E1D025A62954782C00239401 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E1D025AA2954AA8F00239401 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C2E3C62964378A0099383C /* Mocked */,
+				E1C2E3D129647AFC0099383C /* DataProviderTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -452,8 +457,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C2E3D329647C100099383C /* DataProvider.swift in Sources */,
 				E1C2E3CD296466A40099383C /* URLSessionProtocol.swift in Sources */,
 				E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */,
+				E1C2E3D229647AFC0099383C /* DataProviderTests.swift in Sources */,
+				E16043B329647E290013D8C5 /* Person.swift in Sources */,
 				E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */,
 				E1C2E3D0296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
 			);
