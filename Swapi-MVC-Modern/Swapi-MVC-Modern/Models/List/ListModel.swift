@@ -9,10 +9,14 @@ import Foundation
 
 class ListModel: ListModelProtocol {
 
-    var dataProvider: DataProvider = DataProvider()
+    var dataProvider: DataProviderProtocol
     var people: [Person] = []
     var nextPage: String?
     var isLoading = false
+
+    init(withDataProvider dataProvider: DataProviderProtocol = DataProvider()) {
+        self.dataProvider = dataProvider
+    }
 
     func loadData(completion: @escaping () -> Void) {
         isLoading = true

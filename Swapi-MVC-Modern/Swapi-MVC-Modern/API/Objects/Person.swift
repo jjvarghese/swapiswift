@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Person: Decodable {
+struct Person: Decodable, Equatable {
     let url: String
     let name: String
     let height: String
@@ -26,6 +26,22 @@ struct Person: Decodable {
         case gender
     }
 
+    init(url: String,
+         name: String,
+         height: String,
+         hairColor: String,
+         skinColor: String,
+         eyeColor: String,
+         gender: String) {
+        self.url = url
+        self.name = name
+        self.height = height
+        self.hairColor = hairColor
+        self.skinColor = skinColor
+        self.eyeColor = eyeColor
+        self.gender = gender
+    }
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
@@ -37,4 +53,17 @@ struct Person: Decodable {
         self.eyeColor = try container.decode(String.self, forKey: .eyeColor)
         self.gender = try container.decode(String.self, forKey: .gender)
     }
+
+    static func == (lhs: Person, rhs: Person) -> Bool {
+        return
+            lhs.url == rhs.url &&
+            lhs.name == rhs.name &&
+            lhs.name == rhs.name &&
+            lhs.height == rhs.height &&
+            lhs.hairColor == rhs.hairColor &&
+            lhs.skinColor == rhs.skinColor &&
+            lhs.eyeColor == rhs.eyeColor &&
+            lhs.gender == rhs.gender
+    }
+
 }

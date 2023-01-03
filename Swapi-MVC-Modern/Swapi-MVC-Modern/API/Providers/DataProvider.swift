@@ -9,7 +9,7 @@ import Foundation
 
 private let BASE_URL = "https://swapi.dev/api/"
 
-struct DataProvider {
+struct DataProvider: DataProviderProtocol {
 
     let session: URLSessionProtocol
 

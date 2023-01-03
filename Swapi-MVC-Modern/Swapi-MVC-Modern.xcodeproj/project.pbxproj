@@ -30,6 +30,13 @@
 		E16043B829648A0F0013D8C5 /* DetailModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043B729648A0F0013D8C5 /* DetailModelTests.swift */; };
 		E16043B929648A300013D8C5 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C88A295DDBF1006F56A3 /* DetailModel.swift */; };
 		E16043BA29648A380013D8C5 /* DetailModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C888295DDBD2006F56A3 /* DetailModelProtocol.swift */; };
+		E16043BC29648AE70013D8C5 /* MockedDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */; };
+		E16043BD29648AE70013D8C5 /* MockedDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */; };
+		E16043BF29648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */; };
+		E16043C029648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */; };
+		E16043C229648C4F0013D8C5 /* ListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043C129648C4F0013D8C5 /* ListModelTests.swift */; };
+		E16043C329648C6B0013D8C5 /* ListModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C876295C9F98006F56A3 /* ListModelProtocol.swift */; };
+		E16043C429648C6D0013D8C5 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C878295CA008006F56A3 /* ListModel.swift */; };
 		E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C72964379F0099383C /* MockedURLSession.swift */; };
 		E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */; };
 		E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
@@ -80,6 +87,9 @@
 		E1564DAF29545D3500BD004A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1564DDB2954641800BD004A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E16043B729648A0F0013D8C5 /* DetailModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelTests.swift; sourceTree = "<group>"; };
+		E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDataProvider.swift; sourceTree = "<group>"; };
+		E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		E16043C129648C4F0013D8C5 /* ListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModelTests.swift; sourceTree = "<group>"; };
 		E1C2E3BD296437710099383C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C2E3C72964379F0099383C /* MockedURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSession.swift; sourceTree = "<group>"; };
 		E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSessionDataTask.swift; sourceTree = "<group>"; };
@@ -156,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D025A62954782C00239401 /* DataProvider.swift */,
+				E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -276,6 +287,7 @@
 				E1C2E3C62964378A0099383C /* Mocked */,
 				E1C2E3D129647AFC0099383C /* DataProviderTests.swift */,
 				E16043B729648A0F0013D8C5 /* DetailModelTests.swift */,
+				E16043C129648C4F0013D8C5 /* ListModelTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -285,6 +297,7 @@
 			children = (
 				E1C2E3C72964379F0099383C /* MockedURLSession.swift */,
 				E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */,
+				E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */,
 			);
 			path = Mocked;
 			sourceTree = "<group>";
@@ -439,6 +452,7 @@
 				E137C890295DE110006F56A3 /* DetailView.swift in Sources */,
 				E137C87B295CA254006F56A3 /* ListViewProtocol.swift in Sources */,
 				E137C889295DDBD2006F56A3 /* DetailModelProtocol.swift in Sources */,
+				E16043BC29648AE70013D8C5 /* MockedDataProvider.swift in Sources */,
 				E137C877295C9F98006F56A3 /* ListModelProtocol.swift in Sources */,
 				E118450E295B5258009EF755 /* LoadingTableViewCell.swift in Sources */,
 				E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */,
@@ -450,6 +464,7 @@
 				E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */,
 				E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */,
 				E1C2E3CF296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
+				E16043BF29648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */,
 				E1D025A72954782C00239401 /* DataProvider.swift in Sources */,
 				E137C87D295CA433006F56A3 /* ListView.swift in Sources */,
 				E1564DDD2954641800BD004A /* ListViewController.swift in Sources */,
@@ -464,9 +479,14 @@
 			files = (
 				E16043B829648A0F0013D8C5 /* DetailModelTests.swift in Sources */,
 				E1C2E3D329647C100099383C /* DataProvider.swift in Sources */,
+				E16043BD29648AE70013D8C5 /* MockedDataProvider.swift in Sources */,
 				E1C2E3CD296466A40099383C /* URLSessionProtocol.swift in Sources */,
+				E16043C029648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */,
+				E16043C329648C6B0013D8C5 /* ListModelProtocol.swift in Sources */,
 				E16043B929648A300013D8C5 /* DetailModel.swift in Sources */,
+				E16043C229648C4F0013D8C5 /* ListModelTests.swift in Sources */,
 				E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */,
+				E16043C429648C6D0013D8C5 /* ListModel.swift in Sources */,
 				E1C2E3D229647AFC0099383C /* DataProviderTests.swift in Sources */,
 				E16043BA29648A380013D8C5 /* DetailModelProtocol.swift in Sources */,
 				E16043B329647E290013D8C5 /* Person.swift in Sources */,
