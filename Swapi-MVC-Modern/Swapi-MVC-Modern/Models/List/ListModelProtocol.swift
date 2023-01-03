@@ -12,6 +12,7 @@ protocol ListModelProtocol {
     var people: [Person] { get set }
     var nextPage: String? { get set }
     var isLoading: Bool { get set }
+    var dataProvider: DataProvider { get }
 
     func loadData(completion: @escaping () -> Void)
 

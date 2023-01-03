@@ -26,6 +26,12 @@
 		E1564DAB29545D3500BD004A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1564DAA29545D3500BD004A /* Assets.xcassets */; };
 		E1564DAE29545D3500BD004A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1564DAC29545D3500BD004A /* LaunchScreen.storyboard */; };
 		E1564DDD2954641800BD004A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1564DDB2954641800BD004A /* ListViewController.swift */; };
+		E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C72964379F0099383C /* MockedURLSession.swift */; };
+		E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */; };
+		E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
+		E1C2E3CD296466A40099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
+		E1C2E3CF296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */; };
+		E1C2E3D0296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */; };
 		E1D025A5295472C900239401 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D025A4295472C900239401 /* .swiftlint.yml */; };
 		E1D025A72954782C00239401 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025A62954782C00239401 /* DataProvider.swift */; };
 		E1D025AB2954AA8F00239401 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AA2954AA8F00239401 /* Person.swift */; };
@@ -36,12 +42,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E137C871295C37D0006F56A3 /* PBXContainerItemProxy */ = {
+		E1C2E3C1296437720099383C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E1564D9629545D2E00BD004A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E1564D9D29545D2E00BD004A;
-			remoteInfo = "Swapi-MVC";
+			remoteInfo = "Swapi-MVC-Modern";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,7 +55,6 @@
 		E118450C295B5258009EF755 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		E1184511295B532E009EF755 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		E137C867295C36FD006F56A3 /* SwapiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwapiTableViewCell.xib; sourceTree = "<group>"; };
-		E137C86D295C37D0006F56A3 /* Swapi-MVC-ModernTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swapi-MVC-ModernTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137C876295C9F98006F56A3 /* ListModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModelProtocol.swift; sourceTree = "<group>"; };
 		E137C878295CA008006F56A3 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		E137C87A295CA254006F56A3 /* ListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewProtocol.swift; sourceTree = "<group>"; };
@@ -68,6 +73,11 @@
 		E1564DAD29545D3500BD004A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1564DAF29545D3500BD004A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1564DDB2954641800BD004A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E1C2E3BD296437710099383C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C2E3C72964379F0099383C /* MockedURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSession.swift; sourceTree = "<group>"; };
+		E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSessionDataTask.swift; sourceTree = "<group>"; };
+		E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		E1D025A4295472C900239401 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E1D025A62954782C00239401 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E1D025AA2954AA8F00239401 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -78,14 +88,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E137C86A295C37D0006F56A3 /* Frameworks */ = {
+		E1564D9B29545D2E00BD004A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1564D9B29545D2E00BD004A /* Frameworks */ = {
+		E1C2E3BA296437710099383C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,6 +138,8 @@
 			children = (
 				E137C886295DDB6A006F56A3 /* Objects */,
 				E137C885295DDB5B006F56A3 /* Providers */,
+				E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */,
+				E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -171,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				E1564DA029545D2E00BD004A /* Swapi-MVC-Modern */,
+				E1C2E3BE296437710099383C /* UnitTests */,
 				E1564D9F29545D2E00BD004A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -179,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				E1564D9E29545D2E00BD004A /* Swapi-MVC-Modern.app */,
-				E137C86D295C37D0006F56A3 /* Swapi-MVC-ModernTests.xctest */,
+				E1C2E3BD296437710099383C /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,6 +262,23 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		E1C2E3BE296437710099383C /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2E3C62964378A0099383C /* Mocked */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		E1C2E3C62964378A0099383C /* Mocked */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2E3C72964379F0099383C /* MockedURLSession.swift */,
+				E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */,
+			);
+			path = Mocked;
+			sourceTree = "<group>";
+		};
 		E1D025B72955C8AC00239401 /* SwapiTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,24 +299,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E137C86C295C37D0006F56A3 /* Swapi-MVC-ModernTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E137C873295C37D0006F56A3 /* Build configuration list for PBXNativeTarget "Swapi-MVC-ModernTests" */;
-			buildPhases = (
-				E137C869295C37D0006F56A3 /* Sources */,
-				E137C86A295C37D0006F56A3 /* Frameworks */,
-				E137C86B295C37D0006F56A3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E137C872295C37D0006F56A3 /* PBXTargetDependency */,
-			);
-			name = "Swapi-MVC-ModernTests";
-			productName = "Swapi-MVCTests";
-			productReference = E137C86D295C37D0006F56A3 /* Swapi-MVC-ModernTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E1564D9D29545D2E00BD004A /* Swapi-MVC-Modern */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1564DB229545D3500BD004A /* Build configuration list for PBXNativeTarget "Swapi-MVC-Modern" */;
@@ -305,6 +317,24 @@
 			productReference = E1564D9E29545D2E00BD004A /* Swapi-MVC-Modern.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E1C2E3BC296437710099383C /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C2E3C3296437720099383C /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				E1C2E3B9296437710099383C /* Sources */,
+				E1C2E3BA296437710099383C /* Frameworks */,
+				E1C2E3BB296437710099383C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C2E3C2296437720099383C /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = E1C2E3BD296437710099383C /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,12 +345,12 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					E137C86C295C37D0006F56A3 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = E1564D9D29545D2E00BD004A;
-					};
 					E1564D9D29545D2E00BD004A = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					E1C2E3BC296437710099383C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E1564D9D29545D2E00BD004A;
 					};
 				};
 			};
@@ -338,19 +368,12 @@
 			projectRoot = "";
 			targets = (
 				E1564D9D29545D2E00BD004A /* Swapi-MVC-Modern */,
-				E137C86C295C37D0006F56A3 /* Swapi-MVC-ModernTests */,
+				E1C2E3BC296437710099383C /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E137C86B295C37D0006F56A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E1564D9C29545D2E00BD004A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +386,13 @@
 				E1564DAB29545D3500BD004A /* Assets.xcassets in Resources */,
 				E137C868295C36FE006F56A3 /* SwapiTableViewCell.xib in Resources */,
 				E1564DA929545D2E00BD004A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C2E3BB296437710099383C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,13 +421,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E137C869295C37D0006F56A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E1564D9A29545D2E00BD004A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,7 +437,9 @@
 				E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */,
 				E137C88E295DE0AD006F56A3 /* DetailViewProtocol.swift in Sources */,
 				E1D025B52955C8A800239401 /* SwapiTableViewCell.swift in Sources */,
+				E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */,
 				E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */,
+				E1C2E3CF296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
 				E1D025A72954782C00239401 /* DataProvider.swift in Sources */,
 				E137C87D295CA433006F56A3 /* ListView.swift in Sources */,
 				E1564DDD2954641800BD004A /* ListViewController.swift in Sources */,
@@ -423,13 +448,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1C2E3B9296437710099383C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C2E3CD296466A40099383C /* URLSessionProtocol.swift in Sources */,
+				E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */,
+				E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */,
+				E1C2E3D0296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E137C872295C37D0006F56A3 /* PBXTargetDependency */ = {
+		E1C2E3C2296437720099383C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E1564D9D29545D2E00BD004A /* Swapi-MVC-Modern */;
-			targetProxy = E137C871295C37D0006F56A3 /* PBXContainerItemProxy */;
+			targetProxy = E1C2E3C1296437720099383C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,42 +489,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E137C874295C37D0006F56A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GTTH75B5CS;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.Swapi-MVCTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC-Modern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC-Modern";
-			};
-			name = Debug;
-		};
-		E137C875295C37D0006F56A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GTTH75B5CS;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.Swapi-MVCTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC-Modern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC-Modern";
-			};
-			name = Release;
-		};
 		E1564DB029545D3500BD004A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -661,18 +661,45 @@
 			};
 			name = Release;
 		};
+		E1C2E3C4296437720099383C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTTH75B5CS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jj.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC-Modern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC-Modern";
+			};
+			name = Debug;
+		};
+		E1C2E3C5296437720099383C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTTH75B5CS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jj.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swapi-MVC-Modern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swapi-MVC-Modern";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E137C873295C37D0006F56A3 /* Build configuration list for PBXNativeTarget "Swapi-MVC-ModernTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E137C874295C37D0006F56A3 /* Debug */,
-				E137C875295C37D0006F56A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E1564D9929545D2E00BD004A /* Build configuration list for PBXProject "Swapi-MVC-Modern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -687,6 +714,15 @@
 			buildConfigurations = (
 				E1564DB329545D3500BD004A /* Debug */,
 				E1564DB429545D3500BD004A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C2E3C3296437720099383C /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C2E3C4296437720099383C /* Debug */,
+				E1C2E3C5296437720099383C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

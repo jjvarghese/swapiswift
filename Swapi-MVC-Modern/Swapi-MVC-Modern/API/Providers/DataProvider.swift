@@ -13,8 +13,9 @@ struct DataProvider {
 
     // MARK: - Private -
 
-    private static func getData(url: URL, completion: @escaping (Data?, String?) -> Void) {
-        let task = URLSession.shared.dataTask(with: url) { (data: Data?, _: URLResponse?, _: Error?) -> Void in
+    private func getData(url: URL, session: URLSessionProtocol, completion: @escaping (Data?, String?) -> Void) {
+        let request = URLRequest(url: url)
+        let task = session.dataTask(with: request) { (data: Data?, _: URLResponse?, _: Error?) -> Void in
             guard let data = data else {
                 completion(nil, nil)
 
@@ -49,16 +50,18 @@ struct DataProvider {
 
     // MARK: - Public API Calls -
 
-    static func getPeople(from page: String? = nil, completion: @escaping (Array<Person>, String?) -> Void) {
-        let url: URL
+    var url: URL {
+        return _url
+    }
 
+    private var _url: URL = URL(string: BASE_URL + "people")!
+
+    mutating func getPeople(from page: String? = nil, session: URLSessionProtocol = URLSession.shared, completion: @escaping (Array<Person>, String?) -> Void) {
         if let page = page {
-            url = URL(string: page)!
-        } else {
-            url = URL(string: BASE_URL + "people")!
+            _url = URL(string: page)!
         }
 
-        getData(url: url) { data, next in
+        getData(url: url, session: session) { data, next in
             guard let data = data else {
                 completion([], nil)
 

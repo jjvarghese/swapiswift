@@ -9,6 +9,7 @@ import Foundation
 
 class ListModel: ListModelProtocol {
 
+    var dataProvider: DataProvider = DataProvider()
     var people: [Person] = []
     var nextPage: String?
     var isLoading = false
@@ -16,7 +17,7 @@ class ListModel: ListModelProtocol {
     func loadData(completion: @escaping () -> Void) {
         isLoading = true
 
-        DataProvider.getPeople(from: nextPage) { [weak self] people, next in
+        dataProvider.getPeople(from: nextPage) { [weak self] people, next in
             self?.people.append(contentsOf: people)
             self?.nextPage = next
             self?.isLoading = false
