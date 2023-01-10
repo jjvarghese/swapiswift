@@ -32,7 +32,7 @@ final class ListModelTests: XCTestCase {
                                gender: "testGender3")]
 
     func testPeopleArePopulatedCorrectly() throws {
-        let mockedDataProvider = MockedDataProvider(withMockedPeople: mockedPeople)
+        let mockedDataProvider = MockedSwapiService(withMockedPeople: mockedPeople)
         let listModel = ListModel(withDataProvider: mockedDataProvider)
 
         listModel.loadData { [weak self] in
@@ -42,7 +42,7 @@ final class ListModelTests: XCTestCase {
 
     func testNextPageIsSetCorrectly() throws {
         let mockedNextPageUrl = "https://mocked.next.page.url"
-        let mockedDataProvider = MockedDataProvider(withMockedPeople: mockedPeople,
+        let mockedDataProvider = MockedSwapiService(withMockedPeople: mockedPeople,
                                                     mockedNextPageUrl: mockedNextPageUrl)
         let listModel = ListModel(withDataProvider: mockedDataProvider)
 

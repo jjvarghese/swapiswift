@@ -9,12 +9,12 @@ import Foundation
 
 class ListModel: ListModelProtocol {
 
-    var dataProvider: DataProviderProtocol
+    var dataProvider: SwapiServiceProtocol
     var people: [Person] = []
     var nextPage: String?
     var isLoading = false
 
-    init(withDataProvider dataProvider: DataProviderProtocol = DataProvider()) {
+    init(withDataProvider dataProvider: SwapiServiceProtocol = SwapiService()) {
         self.dataProvider = dataProvider
     }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MockedDataProvider: DataProviderProtocol {
+struct MockedSwapiService: SwapiServiceProtocol {
 
     let mockedPeople: [Person]
     let mockedNextPageUrl: String?

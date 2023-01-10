@@ -7,19 +7,19 @@
 
 import XCTest
 
-final class DataProviderTests: XCTestCase {
+final class SwapiServiceTests: XCTestCase {
 
     let mockedSession = MockedURLSession()
 
     func testInitialUrl() {
-        let mockedDataProvider = DataProvider(withSession: mockedSession)
+        let mockedDataProvider = SwapiService(withSession: mockedSession)
         let expectedInitialUrl = "https://swapi.dev/api/people"
 
         XCTAssertEqual(mockedDataProvider.url.absoluteString, expectedInitialUrl)
     }
 
     func testMutatingUrl() {
-        var mockedDataProvider = DataProvider(withSession: mockedSession)
+        var mockedDataProvider = SwapiService(withSession: mockedSession)
         let expectedMutatedUrl = "https://test.page.2.url"
 
         mockedDataProvider.getPeople(from: expectedMutatedUrl) { _, newUrl in

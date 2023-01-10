@@ -1,23 +1,21 @@
 //
-//  DataProvider.swift
-//  Swapi-MVC
+//  PeopleService.swift
+//  Swapi-MVVM
 //
-//  Created by Joshua Varghese on 22.12.22.
+//  Created by Joshua Varghese on 09.01.23.
 //
 
 import Foundation
 
-private let BASE_URL = "https://swapi.dev/api/"
+struct SwapiService: SwapiServiceProtocol {
 
-struct DataProvider: DataProviderProtocol {
+    private static let BASE_URL = "https://swapi.dev/api/"
 
     let session: URLSessionProtocol
 
     init(withSession session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
-
-    // MARK: - Private -
 
     private func getData(url: URL, completion: @escaping (Data?, String?) -> Void) {
         let request = URLRequest(url: url)
@@ -83,5 +81,4 @@ struct DataProvider: DataProviderProtocol {
             }
         }
     }
-
 }

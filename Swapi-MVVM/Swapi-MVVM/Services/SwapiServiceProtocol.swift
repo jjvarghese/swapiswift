@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DataProviderProtocol {
+protocol SwapiServiceProtocol {
 
     mutating func getPeople(from page: String?, completion: @escaping (Array<Person>, String?) -> Void)
 

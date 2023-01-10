@@ -30,24 +30,24 @@
 		E16043B829648A0F0013D8C5 /* DetailModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043B729648A0F0013D8C5 /* DetailModelTests.swift */; };
 		E16043B929648A300013D8C5 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C88A295DDBF1006F56A3 /* DetailModel.swift */; };
 		E16043BA29648A380013D8C5 /* DetailModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C888295DDBD2006F56A3 /* DetailModelProtocol.swift */; };
-		E16043BC29648AE70013D8C5 /* MockedDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */; };
-		E16043BD29648AE70013D8C5 /* MockedDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */; };
-		E16043BF29648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */; };
-		E16043C029648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */; };
+		E16043BC29648AE70013D8C5 /* MockedSwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BB29648AE70013D8C5 /* MockedSwapiService.swift */; };
+		E16043BD29648AE70013D8C5 /* MockedSwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BB29648AE70013D8C5 /* MockedSwapiService.swift */; };
+		E16043BF29648AFB0013D8C5 /* SwapiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BE29648AFB0013D8C5 /* SwapiServiceProtocol.swift */; };
 		E16043C229648C4F0013D8C5 /* ListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043C129648C4F0013D8C5 /* ListModelTests.swift */; };
 		E16043C329648C6B0013D8C5 /* ListModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C876295C9F98006F56A3 /* ListModelProtocol.swift */; };
 		E16043C429648C6D0013D8C5 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137C878295CA008006F56A3 /* ListModel.swift */; };
 		E16043C7296493F80013D8C5 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043C5296493F80013D8C5 /* PersonTests.swift */; };
+		E16043CA296C79C50013D8C5 /* SwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043C9296C79C40013D8C5 /* SwapiService.swift */; };
+		E16043CB296DB16A0013D8C5 /* SwapiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BE29648AFB0013D8C5 /* SwapiServiceProtocol.swift */; };
+		E16043CC296DB17C0013D8C5 /* SwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043C9296C79C40013D8C5 /* SwapiService.swift */; };
 		E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C72964379F0099383C /* MockedURLSession.swift */; };
 		E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */; };
 		E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
 		E1C2E3CD296466A40099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
 		E1C2E3CF296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */; };
 		E1C2E3D0296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */; };
-		E1C2E3D229647AFC0099383C /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3D129647AFC0099383C /* DataProviderTests.swift */; };
-		E1C2E3D329647C100099383C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025A62954782C00239401 /* DataProvider.swift */; };
+		E1C2E3D229647AFC0099383C /* SwapiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3D129647AFC0099383C /* SwapiServiceTests.swift */; };
 		E1D025A5295472C900239401 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D025A4295472C900239401 /* .swiftlint.yml */; };
-		E1D025A72954782C00239401 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025A62954782C00239401 /* DataProvider.swift */; };
 		E1D025AB2954AA8F00239401 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AA2954AA8F00239401 /* Person.swift */; };
 		E1D025AD2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AC2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift */; };
 		E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */; };
@@ -88,18 +88,18 @@
 		E1564DAF29545D3500BD004A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1564DDB2954641800BD004A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E16043B729648A0F0013D8C5 /* DetailModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelTests.swift; sourceTree = "<group>"; };
-		E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDataProvider.swift; sourceTree = "<group>"; };
-		E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		E16043BB29648AE70013D8C5 /* MockedSwapiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSwapiService.swift; sourceTree = "<group>"; };
+		E16043BE29648AFB0013D8C5 /* SwapiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiServiceProtocol.swift; sourceTree = "<group>"; };
 		E16043C129648C4F0013D8C5 /* ListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModelTests.swift; sourceTree = "<group>"; };
 		E16043C5296493F80013D8C5 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		E16043C9296C79C40013D8C5 /* SwapiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiService.swift; sourceTree = "<group>"; };
 		E1C2E3BD296437710099383C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C2E3C72964379F0099383C /* MockedURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSession.swift; sourceTree = "<group>"; };
 		E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSessionDataTask.swift; sourceTree = "<group>"; };
 		E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
-		E1C2E3D129647AFC0099383C /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		E1C2E3D129647AFC0099383C /* SwapiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiServiceTests.swift; sourceTree = "<group>"; };
 		E1D025A4295472C900239401 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		E1D025A62954782C00239401 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E1D025AA2954AA8F00239401 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E1D025AC2954CBDE00239401 /* ListViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		E1D025AE2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
@@ -157,20 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				E137C886295DDB6A006F56A3 /* Objects */,
-				E137C885295DDB5B006F56A3 /* Providers */,
 				E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */,
 				E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		E137C885295DDB5B006F56A3 /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				E1D025A62954782C00239401 /* DataProvider.swift */,
-				E16043BE29648AFB0013D8C5 /* DataProviderProtocol.swift */,
-			);
-			path = Providers;
 			sourceTree = "<group>";
 		};
 		E137C886295DDB6A006F56A3 /* Objects */ = {
@@ -221,6 +211,7 @@
 		E1564DA029545D2E00BD004A /* Swapi-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				E16043C8296C76A40013D8C5 /* Services */,
 				E137C884295DDAC3006F56A3 /* API */,
 				E1564DD72954604200BD004A /* Views */,
 				E1564DD62954603800BD004A /* Models */,
@@ -283,11 +274,20 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		E16043C8296C76A40013D8C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E16043BE29648AFB0013D8C5 /* SwapiServiceProtocol.swift */,
+				E16043C9296C79C40013D8C5 /* SwapiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E1C2E3BE296437710099383C /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				E1C2E3C62964378A0099383C /* Mocked */,
-				E1C2E3D129647AFC0099383C /* DataProviderTests.swift */,
+				E1C2E3D129647AFC0099383C /* SwapiServiceTests.swift */,
 				E16043B729648A0F0013D8C5 /* DetailModelTests.swift */,
 				E16043C129648C4F0013D8C5 /* ListModelTests.swift */,
 				E16043C5296493F80013D8C5 /* PersonTests.swift */,
@@ -300,7 +300,7 @@
 			children = (
 				E1C2E3C72964379F0099383C /* MockedURLSession.swift */,
 				E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */,
-				E16043BB29648AE70013D8C5 /* MockedDataProvider.swift */,
+				E16043BB29648AE70013D8C5 /* MockedSwapiService.swift */,
 			);
 			path = Mocked;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 				E137C890295DE110006F56A3 /* DetailView.swift in Sources */,
 				E137C87B295CA254006F56A3 /* ListViewProtocol.swift in Sources */,
 				E137C889295DDBD2006F56A3 /* DetailModelProtocol.swift in Sources */,
-				E16043BC29648AE70013D8C5 /* MockedDataProvider.swift in Sources */,
+				E16043BC29648AE70013D8C5 /* MockedSwapiService.swift in Sources */,
 				E137C877295C9F98006F56A3 /* ListModelProtocol.swift in Sources */,
 				E118450E295B5258009EF755 /* LoadingTableViewCell.swift in Sources */,
 				E1D025BA2955FC3E00239401 /* DetailViewController.swift in Sources */,
@@ -467,8 +467,8 @@
 				E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */,
 				E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */,
 				E1C2E3CF296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
-				E16043BF29648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */,
-				E1D025A72954782C00239401 /* DataProvider.swift in Sources */,
+				E16043BF29648AFB0013D8C5 /* SwapiServiceProtocol.swift in Sources */,
+				E16043CA296C79C50013D8C5 /* SwapiService.swift in Sources */,
 				E137C87D295CA433006F56A3 /* ListView.swift in Sources */,
 				E1564DDD2954641800BD004A /* ListViewController.swift in Sources */,
 				E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */,
@@ -481,19 +481,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16043B829648A0F0013D8C5 /* DetailModelTests.swift in Sources */,
-				E1C2E3D329647C100099383C /* DataProvider.swift in Sources */,
-				E16043BD29648AE70013D8C5 /* MockedDataProvider.swift in Sources */,
+				E16043BD29648AE70013D8C5 /* MockedSwapiService.swift in Sources */,
+				E16043CC296DB17C0013D8C5 /* SwapiService.swift in Sources */,
 				E1C2E3CD296466A40099383C /* URLSessionProtocol.swift in Sources */,
-				E16043C029648AFB0013D8C5 /* DataProviderProtocol.swift in Sources */,
 				E16043C329648C6B0013D8C5 /* ListModelProtocol.swift in Sources */,
 				E16043C7296493F80013D8C5 /* PersonTests.swift in Sources */,
 				E16043B929648A300013D8C5 /* DetailModel.swift in Sources */,
 				E16043C229648C4F0013D8C5 /* ListModelTests.swift in Sources */,
 				E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */,
 				E16043C429648C6D0013D8C5 /* ListModel.swift in Sources */,
-				E1C2E3D229647AFC0099383C /* DataProviderTests.swift in Sources */,
+				E1C2E3D229647AFC0099383C /* SwapiServiceTests.swift in Sources */,
 				E16043BA29648A380013D8C5 /* DetailModelProtocol.swift in Sources */,
 				E16043B329647E290013D8C5 /* Person.swift in Sources */,
+				E16043CB296DB16A0013D8C5 /* SwapiServiceProtocol.swift in Sources */,
 				E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */,
 				E1C2E3D0296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
 			);
