@@ -40,6 +40,12 @@
 		E16043CA296C79C50013D8C5 /* SwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043C9296C79C40013D8C5 /* SwapiService.swift */; };
 		E16043CB296DB16A0013D8C5 /* SwapiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043BE29648AFB0013D8C5 /* SwapiServiceProtocol.swift */; };
 		E16043CC296DB17C0013D8C5 /* SwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043C9296C79C40013D8C5 /* SwapiService.swift */; };
+		E16043D0296DB5D40013D8C5 /* ListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043CF296DB5D40013D8C5 /* ListViewState.swift */; };
+		E16043D2296DB67C0013D8C5 /* ListViewRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043D1296DB67C0013D8C5 /* ListViewRequestDelegate.swift */; };
+		E16043D3296DB67C0013D8C5 /* ListViewRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043D1296DB67C0013D8C5 /* ListViewRequestDelegate.swift */; };
+		E16043D4296EE1A70013D8C5 /* ListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043CF296DB5D40013D8C5 /* ListViewState.swift */; };
+		E16043D6296EE1DE0013D8C5 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043D5296EE1DE0013D8C5 /* ListViewModel.swift */; };
+		E16043D7296EE1DE0013D8C5 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16043D5296EE1DE0013D8C5 /* ListViewModel.swift */; };
 		E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C72964379F0099383C /* MockedURLSession.swift */; };
 		E1C2E3CA296437F10099383C /* MockedURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */; };
 		E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */; };
@@ -93,6 +99,9 @@
 		E16043C129648C4F0013D8C5 /* ListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModelTests.swift; sourceTree = "<group>"; };
 		E16043C5296493F80013D8C5 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		E16043C9296C79C40013D8C5 /* SwapiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiService.swift; sourceTree = "<group>"; };
+		E16043CF296DB5D40013D8C5 /* ListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewState.swift; sourceTree = "<group>"; };
+		E16043D1296DB67C0013D8C5 /* ListViewRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewRequestDelegate.swift; sourceTree = "<group>"; };
+		E16043D5296EE1DE0013D8C5 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		E1C2E3BD296437710099383C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C2E3C72964379F0099383C /* MockedURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSession.swift; sourceTree = "<group>"; };
 		E1C2E3C9296437F10099383C /* MockedURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedURLSessionDataTask.swift; sourceTree = "<group>"; };
@@ -140,6 +149,9 @@
 				E137C87A295CA254006F56A3 /* ListViewProtocol.swift */,
 				E137C87C295CA433006F56A3 /* ListView.swift */,
 				E137C880295CAACA006F56A3 /* ListView.xib */,
+				E16043CF296DB5D40013D8C5 /* ListViewState.swift */,
+				E16043D1296DB67C0013D8C5 /* ListViewRequestDelegate.swift */,
+				E16043D5296EE1DE0013D8C5 /* ListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -156,19 +168,10 @@
 		E137C884295DDAC3006F56A3 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				E137C886295DDB6A006F56A3 /* Objects */,
 				E1C2E3CB29645D6E0099383C /* URLSessionProtocol.swift */,
 				E1C2E3CE296470360099383C /* URLSessionDataTaskProtocol.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		E137C886295DDB6A006F56A3 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				E1D025AA2954AA8F00239401 /* Person.swift */,
-			);
-			path = Objects;
 			sourceTree = "<group>";
 		};
 		E137C887295DDBC1006F56A3 /* Detail */ = {
@@ -211,14 +214,13 @@
 		E1564DA029545D2E00BD004A /* Swapi-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				E16043CE296DB41A0013D8C5 /* Resources */,
+				E16043CD296DB3EF0013D8C5 /* Core */,
 				E16043C8296C76A40013D8C5 /* Services */,
 				E137C884295DDAC3006F56A3 /* API */,
 				E1564DD72954604200BD004A /* Views */,
 				E1564DD62954603800BD004A /* Models */,
 				E1564DD52954600800BD004A /* Controllers */,
-				E1564DA729545D2E00BD004A /* Main.storyboard */,
-				E1564DAA29545D3500BD004A /* Assets.xcassets */,
-				E1564DAC29545D3500BD004A /* LaunchScreen.storyboard */,
 				E1564DAF29545D3500BD004A /* Info.plist */,
 				E1D025A4295472C900239401 /* .swiftlint.yml */,
 			);
@@ -229,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				E1564DDA295461A100BD004A /* List */,
-				E1564DD92954615700BD004A /* App */,
 				E1D025BC2955FC4400239401 /* Detail */,
 			);
 			path = Controllers;
@@ -238,6 +239,7 @@
 		E1564DD62954603800BD004A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E1D025AA2954AA8F00239401 /* Person.swift */,
 				E137C887295DDBC1006F56A3 /* Detail */,
 				E137C883295DDA9B006F56A3 /* List */,
 			);
@@ -253,15 +255,6 @@
 				E137C882295DD922006F56A3 /* List */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E1564DD92954615700BD004A /* App */ = {
-			isa = PBXGroup;
-			children = (
-				E1564DA329545D2E00BD004A /* SceneDelegate.swift */,
-				E1564DA129545D2E00BD004A /* AppDelegate.swift */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		E1564DDA295461A100BD004A /* List */ = {
@@ -281,6 +274,25 @@
 				E16043C9296C79C40013D8C5 /* SwapiService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E16043CD296DB3EF0013D8C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E1564DA329545D2E00BD004A /* SceneDelegate.swift */,
+				E1564DA129545D2E00BD004A /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E16043CE296DB41A0013D8C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1564DA729545D2E00BD004A /* Main.storyboard */,
+				E1564DAA29545D3500BD004A /* Assets.xcassets */,
+				E1564DAC29545D3500BD004A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E1C2E3BE296437710099383C /* UnitTests */ = {
@@ -462,13 +474,16 @@
 				E137C879295CA008006F56A3 /* ListModel.swift in Sources */,
 				E1D025AB2954AA8F00239401 /* Person.swift in Sources */,
 				E1564DA229545D2E00BD004A /* AppDelegate.swift in Sources */,
+				E16043D2296DB67C0013D8C5 /* ListViewRequestDelegate.swift in Sources */,
 				E137C88E295DE0AD006F56A3 /* DetailViewProtocol.swift in Sources */,
 				E1D025B52955C8A800239401 /* SwapiTableViewCell.swift in Sources */,
 				E1C2E3CC29645D6E0099383C /* URLSessionProtocol.swift in Sources */,
+				E16043D6296EE1DE0013D8C5 /* ListViewModel.swift in Sources */,
 				E1564DA429545D2E00BD004A /* SceneDelegate.swift in Sources */,
 				E1C2E3CF296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
 				E16043BF29648AFB0013D8C5 /* SwapiServiceProtocol.swift in Sources */,
 				E16043CA296C79C50013D8C5 /* SwapiService.swift in Sources */,
+				E16043D0296DB5D40013D8C5 /* ListViewState.swift in Sources */,
 				E137C87D295CA433006F56A3 /* ListView.swift in Sources */,
 				E1564DDD2954641800BD004A /* ListViewController.swift in Sources */,
 				E1D025AF2954CBEA00239401 /* ListViewController+UITableViewDelegate.swift in Sources */,
@@ -480,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16043D3296DB67C0013D8C5 /* ListViewRequestDelegate.swift in Sources */,
 				E16043B829648A0F0013D8C5 /* DetailModelTests.swift in Sources */,
 				E16043BD29648AE70013D8C5 /* MockedSwapiService.swift in Sources */,
 				E16043CC296DB17C0013D8C5 /* SwapiService.swift in Sources */,
@@ -493,8 +509,10 @@
 				E1C2E3D229647AFC0099383C /* SwapiServiceTests.swift in Sources */,
 				E16043BA29648A380013D8C5 /* DetailModelProtocol.swift in Sources */,
 				E16043B329647E290013D8C5 /* Person.swift in Sources */,
+				E16043D7296EE1DE0013D8C5 /* ListViewModel.swift in Sources */,
 				E16043CB296DB16A0013D8C5 /* SwapiServiceProtocol.swift in Sources */,
 				E1C2E3C82964379F0099383C /* MockedURLSession.swift in Sources */,
+				E16043D4296EE1A70013D8C5 /* ListViewState.swift in Sources */,
 				E1C2E3D0296470360099383C /* URLSessionDataTaskProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
